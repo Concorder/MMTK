@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+html, body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+p, span, h1, h2, h3{
+	margin:0;
+	padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+  color: inherit;
+}
+:root{
+	--main-color:#0e2070;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+.wrapper {
+	max-width: 1383px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+header .wrapper {
+max-width: 1578px;
+padding: 0 20px;
+}
+header{
+	top: 0;
+	height: 112px;
+	background: var(--main-color);
+	position: fixed;
+	width: 100%;
+}
+.socials {
+	float: right;
+	display: inline-block;
+	margin-top: 43px;
+	
+}
+.socials img {
+	fill: red;
+	width: 31px;
+}
+.socials img:first-child{
+	margin-right: 25px;
+}
+ul[class*="menu-hor"] {
+	padding-left: 0;
+	list-style-type: none;
+}
+ul[class*="menu-hor"] li {
+	display: inline;
+	
+}
+.squire-box{
+	display: table;
+}
+.squires{
+	display: flex;
+	width: 50%;
+	background: var(--main-color);
+	height: calc(60vh - 56px);
+}
+.squires:nth-child(1), .squires:nth-child(3) {
+	float: left;
+}
+.squires:nth-child(2){
+	background: url(../images/img_1.jpg);
+	background-size: cover;
+}
+.squires:nth-child(3){
+	background: url(../images/img_2.jpg);
+	background-size: cover;
+}
+.squires div {
+	margin: auto; 
+}
+.squires p {
+	font-size: 23px;
+	display: block;
+	width: 60%;
+	margin: auto;
+	color: #fff;
+	font-weight: 600;
+	display: block;
+}
+.hero-banner {
+	margin-top: 112px;
+	background: url(../images/hero.jpg);
+	background-size: cover;
+	background-position: top;
+	height: calc(100vh - 112px);
+	overflow: hidden;
+}
+.hero-banner a {
+	display: block;
+	background: #fff;
+	border: 2px solid var(--main-color);
+	width: 328px;
+	padding: 16px;
+	text-align: center;
+	margin-top: 70px;
+	border-radius: 5px;
+	font-size: 23px;
+	font-weight: 700;
+	color: var(--main-color);
+	}
+.button {
+	display: block;
+	background: #fff;
+	border: 2px solid var(--main-color);
+	width: 328px;
+	padding: 16px;
+	text-align: center;
+	margin-top: 70px;
+	border-radius: 5px;
+	font-size: 23px;
+	font-weight: 700;
+	color: var(--main-color);
+	margin-left: auto;
+	margin-right: auto;
+}
+.header-menu-hor {
+	color: #fff;
+	font-size: 30px;
+	margin-right: 90px;
+	float: right;
+	font-weight: 700;
+	margin-top: 42px;
+}
+.header-menu-hor li {
+	margin-right: 27px;
+	padding-bottom: 20px;
+	
+}
+.header-menu-hor li.active{
+	border-bottom: 2px solid #fff;
+}
+.hero-text-box {
+	margin-top: 175px;
+	width: 770px;
+}
+.hero-text {
+	font-size: 40px;
+	font-family: 'Maven Pro', sans-serif;
+}
+.nums {
+	font-family: 'Maven Pro', sans-serif;
+}
+.logo {
+	width: 176px;
+	margin-top: 17px;
+}
+.icons {background: url(../images/black-texture.jpg) #2f2f2f;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 650px;
+}
+.icons .wrapper {
+	margin-top: 170px;
+}
+.icons svg {
+	display: block;
+	fill: #fff;
+	height: 92px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px
+}
+.icon-box {
+	white-space: normal;
+	display: inline-block;
+	width: 25%;
+	height: 192px;
+	color: #fff;
+	vertical-align: top;
+
+}
+.icon-box span {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 23px;
+	font-weight: 700;
+	margin-top: 56px;
+}
+footer {
+	background: var(--main-color);
+	height: 422px;
+}
+footer .logo {
+	margin-top: 55px;
+	margin-bottom: 45px;
+}
+.footer-left-block {
+	float: left;
+	text-align: left;
+}
+.footer-left-block span {
+	display: block;
+}
+.footer-left-block span:first-child {
+	font-size: 30px;
+}
+/*tablets*/
+ @media screen
+ 	and (min-device-width: 601px)
+ 	and (max-device-width: 1024px)
+{
+
+}

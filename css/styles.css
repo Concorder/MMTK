@@ -56,17 +56,17 @@ header{
 	position: fixed;
 	width: 100%;
 }
-.socials {
+.desk-socials {
 	float: right;
 	display: inline-block;
 	margin-top: 43px;
 	
 }
-.socials img {
+.desk-socials img {
 	fill: red;
 	width: 31px;
 }
-.socials img:first-child{
+.desk-socials img:first-child{
 	margin-right: 25px;
 }
 ul[class*="menu-hor"] {
@@ -119,7 +119,7 @@ ul[class*="menu-hor"] li:hover {
 	margin-top: 112px;
 	background: url(../images/hero.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	height: calc(100vh - 112px);
 	overflow: hidden;
 }
@@ -228,6 +228,7 @@ footer {
 	font-size: 20px;
 	background: var(--main-color);
 	height: 422px;
+	z-index: -1;
 }
 .footer-menu {
 	color: #fff;
@@ -285,8 +286,167 @@ footer .logo {
 	display: inline-block;
 }
 [class*="mob-"] {
-	display: none;
+	display: none !important;
 }
+
+
+/*menu*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+html, body, ul, ul li {
+  margin: 0;
+  padding: 0;
+}
+/* Parent div */
+#navigation {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 400px;
+    z-index: 100;
+}
+/* Menu Icon */
+.menu-icon {
+    font-size: 1.3em;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    background-color: #1631a9;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+}
+/* class for the ul*/
+.menu-close {
+	display: none;
+    z-index: 20;
+    font-size: 40px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    color: #fff;
+    line-height: 42px;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    background-color: #1631a9;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+}
+/* class for the ul*/
+.menu-items-container {
+  background-color: #fff;
+  position: absolute;
+  display: none;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+  z-index: 20;
+}
+
+.menu-items-container li {
+  padding: 0 0 0 0;
+  list-style-type: none;
+}
+.menu-items-container li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.menu-items-container li:nth-child(1):hover {
+  background-color: #3bb1f4;
+}
+.menu-items-container li:nth-child(2):hover {
+  background-color: #f8dc3d;
+}
+.menu-items-container li:nth-child(3):hover {
+  background-color: #dd4b39;
+}
+.menu-items-container li:nth-child(4):hover {
+  background-color: #429f46;
+}
+.menu-items-container li:nth-child(5):hover {
+  background-color: #691a99;
+}
+/* circular background for the icons*/
+.circle-icon {
+  color: #fff;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 100%;
+}
+
+.menu-text-icons {
+	display: flex !important;
+  font-size: 1.2em;
+  display: block;
+  margin: 10px 0 10px -50px;
+  float: left;
+  transition: all 1s ease;
+  background-color: #1631a9;
+
+}
+.menu-text-icons svg {
+	color: #fff;
+	height: 20px;
+	margin: auto;
+}
+/* transition for the icons to move from left side*/
+.effect-menu-text-icons {
+  margin-left: 20px;
+}
+/* text next to icons */
+.menu-text {
+  font-size: 1em;
+  width: 150px;
+  line-height: 32px;
+  display: block;
+  float: right;
+  margin: 10px -200px 10px 0;
+  transition: all 1s ease;
+}
+/* transition for the text to move from right side*/
+.effect-menu-text {
+  margin-right: 75px;
+}
+/* bottom border divider*/
+.bottom-border {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  clear: both;
+}
+/* An overlay div that holds the navigation menu */
+
+
+
+
 /*tablets*/
 /* @media screen
  	and (min-device-width: 601px)
@@ -298,7 +458,7 @@ footer .logo {
 /*mobile*/
 
 @media (max-width: 600px) {
-	[class*="desk"] {
+[class*="desk"] {
 	display: none !important;
 }
 header {height: 78px;}
@@ -406,7 +566,7 @@ footer .wrapper {
     margin-top: 30px;}
 
 .footer-right-block span {
-font-size: 16px;
+font-size: 15px;
     text-align: center;
     display: block;
     margin-bottom: 10px;

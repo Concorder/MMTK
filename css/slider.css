@@ -24,6 +24,8 @@
   height: 100%;
   position: absolute;
   width: 100%;
+  background-size: cover !important;
+
 }
 
 .slide:first-child {
@@ -31,11 +33,13 @@
 }
 
 .slide:nth-of-type(1) {
-  background: #D7A151;
+  background: url(../images/office1.jpg);
+  background-position: center;
 }
 
 .slide:nth-of-type(2) {
-  background: #F4E4CD;
+  background: url(../images/office2.jpg);
+  background-position: top;
 }
 
 .slide:nth-of-type(3) {
@@ -121,7 +125,16 @@ a.slide_btn {
   color: #fff;
 }
 
-@media screen (max-width: 720px) {
+@media screen and (max-width: 720px) {
 .directional_nav {
-  transform: scale(0.6);}
+  width: 100vw;
+  height: 100%;
+  opacity: 0;
+}
+#navigation {
+  pointer-events: none;
+}
+#navigation * {
+  pointer-events: auto;
+}
 }

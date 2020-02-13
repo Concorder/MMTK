@@ -12,7 +12,7 @@ html, body {
 body {
 	overflow-x: hidden;
 }
-p, span, h1, h2, h3{
+p, span, h1, h2, h3, h4{
 	margin:0;
 	padding: 0;
 }
@@ -32,11 +32,13 @@ h1 {
 	text-transform: uppercase;
 	font-size: 40px;
 	font-weight: 700;
-	margin-bottom: 60px;
 }
 h3 {
 	font-size: 23px;
 }
+h4 {font-size: 18px;
+	font-weight: 500;
+	margin-top: 50px}
 .wrapper {
 	overflow: hidden;
 	padding: 0 20px;
@@ -229,7 +231,6 @@ background-size: cover;}
 }
 .tech .squires p {
 	width: 80%;
-
 }
 
 .squires div {
@@ -293,13 +294,37 @@ iframe {
 	background: url(../images/hero_contact.jpg) no-repeat;
 	background-size: cover;
     background-position: top;
-    height: 70vh;
 }
 .about .hero-banner {
 	background: url(../images/about.jpg) no-repeat;
 	background-size: cover;
 }
-
+.hero-banner.policy {
+	background: url(../images/policy.jpg) no-repeat;
+	background-size: cover;
+}
+.hero-banner.security {
+	background: url(../images/security.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;  
+}
+.hero-banner.terms {
+	background: url(../images/terms.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.hero-banner.copyright {
+	background: url(../images/copyright.jpg);
+	background-size: cover;
+}
+.wrapper.policy-text {
+max-width: 915px;
+padding-bottom: 50px;
+}
+.wrapper.policy-text p {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 .adress-block {
 	display: flex;
     margin: auto;
@@ -420,7 +445,20 @@ margin-right: 0;
     z-index: 20;
     cursor: default;
 }
-.career h1 {
+.policy .hero-text-box {
+	position: relative;
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px;
+    background: #ffffffc7;
+    color: #1136d8;
+    font-size: 60px;
+    z-index: 20;
+    cursor: default;
+}
+.career h1, .privacy h1 {
 	font-size: 44px;
 	margin-bottom: 0px;
 }
@@ -512,6 +550,7 @@ margin-right: 0;
 	display: flex;
 flex-direction: row;}
 .hero-text {
+	margin-top: 60px;
 	font-size: 40px;
     font-family: 'Maven Pro', sans-serif;
     display: block;
@@ -805,6 +844,12 @@ html, body, ul, ul li {
   background-color: #e5e5e5;
   clear: both;
 }
+.policy .hero-banner,
+.contact .hero-banner, 
+.tech .hero-banner, 
+.about .hero-banner {
+	height: 70vh;
+}
 
 /*==========================================MOBILE==========*/
 
@@ -833,11 +878,9 @@ html, body, ul, ul li {
 .white-squires div {
 	height: 800px;
 }
-.contact .hero-banner {
-	height: 70vh;
-}
 
 }
+
 
 /*mobile*/
 
@@ -895,9 +938,11 @@ display: inherit !important;
 	display: flex;
 	flex-direction: column;
 }
+.main h1 {
+	margin-bottom: 180px;
+}
 h1 {font-size: 27px;
-	font-weight: 600;
-	margin-bottom: 180px;}
+	font-weight: 600;}
 .hero-text {
 	width: 100%;
 	font-size: 23px;

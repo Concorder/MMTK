@@ -43,6 +43,48 @@ h1 {
 	margin-right: auto;
 	margin-left: auto;
 }
+form.wrapper {
+	max-width: 1000px;
+}
+form.wrapper input {
+	color: #fff;
+	background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 3px;
+    margin: 0 10px;
+    max-width: 272px;
+    margin-bottom: 65px;
+}
+form.wrapper input:focus {
+	outline: none;
+}
+form.wrapper input:-webkit-autofill {
+	-webkit-text-fill-color: #fff !important;
+}
+#email {
+max-width: 405px !important;
+width: 384px;
+}
+form.wrapper textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    height: 46px;
+    font-size: 23px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #1b1b1d;
+}
+
+form.wrapper input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+form.wrapper textarea::-webkit-scrollbar {display: none;}
 header .wrapper {
 max-width: 1578px;
 }
@@ -61,7 +103,6 @@ header{
 	float: right;
 	display: inline-block;
 	margin-top: 43px;
-	
 }
 .desk-socials img {
 	fill: red;
@@ -100,6 +141,7 @@ ul[class*="menu-hor"] li:hover {
 	height: calc(60vh - 56px);
 }
 .white-squires {
+	font-size: 18px;
 	display: flex;
 	float: left;
 	height: min-content;
@@ -108,8 +150,8 @@ ul[class*="menu-hor"] li:hover {
 }
 .white-squires div {
 	width: 60%;
-	height: 600px;
-	margin: 155px auto;
+	height: 700px;
+	margin: 100px auto;
 }
 .white-squires img {
 	display: block;
@@ -129,7 +171,7 @@ ul[class*="menu-hor"] li:hover {
 }
 .white-squires p {
 	display: block;
-	min-height: 170px;
+	min-height: 200px;
 }
 .white-squires:nth-child(even) {
 	float: right;
@@ -188,9 +230,7 @@ background-size: cover;}
 	width: 80%;
 
 }
-.tech .squires div {
 
-}
 .squires div {
 	margin: auto; 
 }
@@ -247,9 +287,46 @@ iframe {
 .tech .hero-banner {
 	background: url(../images/img_4.jpg);
 	background-size: cover;
-
 }
-
+.contact .hero-banner {
+	background: url(../images/hero_contact.jpg) no-repeat;
+	background-size: cover;
+    background-position: top;
+    height: 70vh;
+}
+.adress-block {
+	display: flex;
+    margin: auto;
+    width: 980px;
+    height: 400px;
+    background: var(--main-color);
+}
+.adress-block span {
+	display: block;
+	color: #fff;
+	font-size: 28px;
+	font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+}
+.adress-block div {
+	margin: auto;
+}
+.form-section {
+	    background: url(../images/black-texture.jpg) #2f2f2f;
+	    padding: 110px 0;
+}
+.contact form {
+	color: #fff;
+	font-size: 23px;
+	font-family: 'Raleway', sans-serif;
+}
+.contact form h2 {
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 70px;
+}
 .career .hero-banner {
 	position: relative;
 	background: #ffc4c4;
@@ -269,6 +346,14 @@ iframe {
 	margin-left: auto;
 	margin-right: auto;
 	transition: transform 0.2s;
+}
+.button.blue{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	background: var(--main-color);
+	float: left;
+	border: 1px solid #fff;
 }
 .button:visited {
 	color: var(--main-color);
@@ -326,7 +411,12 @@ margin-right: 0;
 	display: flex;
 	background: var(--main-color);
 	height: calc(60vh - 56px);
-
+}
+.contact .wideblock {
+	background: url(../images/building.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 1220px;
 }
 .wideblock p {
 	font-size: 23px;
@@ -453,8 +543,6 @@ footer .logo {
 [class*="mob-"] {
 	display: none !important;
 }
-
-
 /*menu*/
 
 body {
@@ -627,15 +715,16 @@ html, body, ul, ul li {
 .desk-socials img:first-child {
     margin-right: 10px;
 }
-.white-squires p {
-    display: block;
-    min-height: 170px;
+.white-squires h4 {
+	height: 72px;
 }
 .white-squires p {
     display: block;
-    min-height: 250px;
+    min-height: 280px;
 }
-
+.white-squires div {
+	height: 800px;
+}
 
 }
 
@@ -674,7 +763,6 @@ display: inherit !important;
 	margin-top: 30px;
 }
 .squire-box {
-
 	display: flex;
 	flex-direction: column;
 }
@@ -701,6 +789,13 @@ h1 {font-size: 27px;
 	width: 100%;
 	line-height: 1.5;
 
+}
+.white-squires div {
+	width: 85%;
+}
+
+.white-squires h4 {
+	height: unset;
 }
 .squires {
 	height: fit-content;

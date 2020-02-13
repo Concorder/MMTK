@@ -209,7 +209,6 @@ background-size: cover;}
 	bottom: 110px;
 	left: 0;
 	position: absolute;
-	background: red;
 	background: url(../images/img_5.jpg) no-repeat;
 	background-size: contain;
 	background-position: right;

@@ -82,7 +82,7 @@ form.wrapper input:focus {
 	outline: none;
 }
 form.wrapper input:-webkit-autofill {
-	-webkit-text-fill-color: #fff !important;
+	-webkit-text-fill-color: #848484 !important;
 }
 #email {
 max-width: 405px !important;

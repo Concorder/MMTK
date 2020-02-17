@@ -406,8 +406,8 @@ iframe {
 .adress-block span {
 	display: block;
 	color: #fff;
-	font-size: 28px;
-	font-weight: 900;
+	font-size: 24px;
+	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
 }
 .adress-block div {
@@ -554,7 +554,7 @@ margin-right: 0;
 	background: url(../images/building.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 1220px;
+	height: 900px;
 }
 .wideblock p {
 	font-size: 23px;

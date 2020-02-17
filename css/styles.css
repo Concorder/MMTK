@@ -8,7 +8,9 @@ html, body {
   margin:0;
   padding: 0;
 }
-
+div {
+	box-sizing: border-box;
+}
 body {
 	overflow-x: hidden;
 	font-family: 'Raleway', sans-serif;
@@ -149,6 +151,7 @@ ul[class*="menu-hor"] li:hover {
 	background: var(--main-color);
 }
 .white-squire-box {
+	box-sizing: border-box;
 	display: table;
 	width: 100%;
 	padding: 70px 20px;
@@ -162,6 +165,7 @@ ul[class*="menu-hor"] li:hover {
 	width: 50%;
 	background: var(--main-color);
 	height: calc(60vh - 56px);
+	box-sizing: border-box;
 }
 .white-squires {
 	font-size: 18px;
@@ -372,6 +376,7 @@ iframe {
 }
 
 .wrapper.policy-text p {
+	font-weight: 500;
 	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -745,7 +750,7 @@ footer .logo {
 }
 .footer-right-block img {
 	width: 31px;
-	margin-left: 32px;
+	margin-left: 15px;
 	vertical-align: middle;
 
 }
@@ -1056,7 +1061,8 @@ h1 {font-size: 27px;
 
     max-width: unset;
 }
-.wideblock {
+.wideblock {   
+	box-sizing: border-box;
 	height: fit-content;
 	padding: 30px 30px;
 	width: 100%;
@@ -1070,7 +1076,7 @@ h1 {font-size: 27px;
 }
 
 .white-squires div {
-	width: 85%;
+	width: 100%;
 	height: min-content;
 	margin: 70px auto;
 }

@@ -1,6 +1,5 @@
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 html, body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -13,11 +12,15 @@ div {
 }
 body {
 	overflow-x: hidden;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+;
 }
 p, span, h1, h2, h3, h4{
 	margin:0;
 	padding: 0;
+}
+p {
+	line-height: 1.5;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -33,25 +36,24 @@ a, a:visited, a:hover, a:active {
 }
 h1 {
 	text-transform: uppercase;
-	font-size: 40px;
-	font-weight: 700;
+	font-size: 36px;
+	font-weight: 600;
 }
 h3 {
 	font-size: 23px;
 }
 
 h4 {
-	font-size: 40px;
-	font-weight: 900;
+	font-size: 36px;
+	font-weight: 600;
 	margin-top: 40px;
 	margin-bottom: 30px;
 	color: #1136d8;
-	font-family: 'Raleway', sans-serif;
 }
 
 h5 {
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	margin-top: 30px;
 }
 
@@ -72,7 +74,7 @@ form.wrapper input {
     border: 0px;
     border-bottom: 1px solid #fff;
     text-align: center;
-    font-size: 23px;
+    font-size: 18px;
     padding-bottom: 3px;
     margin: 0 10px;
     max-width: 272px;
@@ -93,7 +95,7 @@ form.wrapper textarea {
     width: 100%;
     resize: vertical;
     height: 46px;
-    font-size: 23px;
+    font-size: 18px;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -110,6 +112,9 @@ max-width: 1578px;
 }
 .icons .wrapper {
 	padding: 0;
+}
+.icons.map {
+	height: 400px;
 }
 header{
 	top: 0;
@@ -177,14 +182,14 @@ ul[class*="menu-hor"] li:hover {
 }
 .white-squires div {
 	width: 60%;
-	height: 435px;
+	height: 500px;
 	margin: 40px auto;
 }
 .white-squires img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 110px;
+	height: 110px;
 	margin-bottom: 80px;
 
 }
@@ -193,7 +198,7 @@ ul[class*="menu-hor"] li:hover {
 	height: 42px;
 	color: #1136d8;
 	margin-bottom: 35px;
-	font-weight: 700;
+	font-weight: 600;
 }
 .white-squires  h4:nth-child(2) {
 	text-align: center;
@@ -201,7 +206,8 @@ ul[class*="menu-hor"] li:hover {
 .white-squires p {
 	display: block;
 	min-height: 200px;
-	    font-weight: 600;
+
+
 }
 .white-squires:nth-child(even) {
 	float: right;
@@ -210,8 +216,8 @@ ul[class*="menu-hor"] li:hover {
 .interested-2 {
 	text-align: center;
 	display: block;
-	font-weight: 700; 
-	font-size: 23px;
+	font-weight: 600;
+	font-size: 18px;
 	color: #1136d8;
 }
 .squires:nth-child(1), .squires:nth-child(3) {
@@ -231,7 +237,6 @@ ul[class*="menu-hor"] li:hover {
 background-size: cover;}
 .tech .squires:nth-child(1) {
 	position: relative;
-    height: 400px;
     padding: 110px 0px;
    background-position: center;
 
@@ -240,14 +245,14 @@ background-size: cover;}
 	background: var(--main-color);
 }
 .tech .squires img {
+
 	top: 110px;
 	right: 0;
 	bottom: 110px;
 	left: 0;
-	position: absolute;
-	background: url(../images/img_5.jpg) no-repeat;
-	background-size: contain;
 	background-position: right;
+	margin: auto;
+	height: 380px;
 }
 .tech .squires:nth-child(2) {
 	background: var(--main-color);
@@ -261,12 +266,9 @@ background-size: cover;}
 	font-weight: 400;
 
 }
-.tech .squires h3 { font-weight: 700; }
+
 .tech .squires h3 {width: 80%;}
-.tech .squires img {
-    margin: auto;
-	max-height: 500px;
-}
+
 .robust-img {
 	margin: auto;
 	max-height: 500px;
@@ -280,12 +282,12 @@ background-size: cover;}
 	margin: auto; 
 }
 .squires p {
-	font-size: 23px;
+	font-size: 18px;
 	display: block;
 	width: 60%;
 	margin: auto;
 	color: #fff;
-	font-weight: 600;
+
 	display: block;
 }
 .squires.black {
@@ -293,19 +295,17 @@ background-size: cover;}
 	font-weight: 400;
 }
 .squires.black p {
-	font-size: 23px;
+	font-size: 18px;
 margin-top: 25px;
     line-height: 1.3;
     font-weight: 400;
-    font-family: 'Raleway', sans-serif;
 }
 .squires h3 {
 	font-size: 23px;
 	margin-top: -15px;
 	line-height: 2;
 	color: #fff;
-	font-weight: 400;
-	text-transform: uppercase;
+	font-weight: 600;
 	margin-bottom: 20px;
 	width: 60%;
 	margin-bottom: 20px;
@@ -333,6 +333,11 @@ iframe {
 	background: url(../images/img_4.jpg);
 	background-size: cover;
 }
+
+.tech .squire-box .wrapper {
+	min-height: 600px;
+
+}
 .contact .hero-banner {
 	background: url(../images/hero_contact.jpg) no-repeat;
 	background-size: cover;
@@ -341,7 +346,7 @@ iframe {
 .about .hero-banner {
 	background: url(../images/about.jpg) no-repeat;
 	background-size: cover;
-	display: fle
+
 }
 .hero-banner.policy {
 	background: url(../images/policy.jpg) no-repeat;
@@ -367,12 +372,11 @@ iframe {
 	padding-bottom: 50px;
 }
 .policy-text h4 {
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 900;
 	margin-top: 40px;
 	margin-bottom: 30px;
 	color: #1136d8;
-	font-family: 'Raleway', sans-serif;
 }
 
 .wrapper.policy-text p {
@@ -383,9 +387,8 @@ iframe {
 }
 .wrapper.policy-text span {
     font-weight: 900;
-    font-family: 'Raleway', sans-serif;
     color: #1136d8;
-    font-size: 24px;
+    font-size: 23px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: block;
@@ -400,15 +403,13 @@ iframe {
 	display: flex;
     margin: auto;
     width: 980px;
-    height: 400px;
+    height: 260px;
     background: var(--main-color);
 }
 .adress-block span {
 	display: block;
 	color: #fff;
-	font-size: 24px;
-	font-weight: 700;
-	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 }
 .adress-block div {
 	margin: auto;
@@ -419,14 +420,12 @@ iframe {
 }
 .contact form {
 	color: #fff;
-	font-size: 23px;
-	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 }
 .contact form h2 {
-	font-size: 30px;
+	font-size: 23px;
 	color: #fff;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
 	margin-bottom: 70px;
 }
 .career .hero-banner {
@@ -458,6 +457,9 @@ iframe {
 	float: left;
 	border: 1px solid #fff;
 }
+.about .button {
+	margin-top: 30px;
+}
 .policy .button.blue{
 	float: none;
 	margin-left: 0;
@@ -475,7 +477,7 @@ iframe {
 	}
 .header-menu-hor {
 	color: #fff;
-	font-size: 24px;
+	font-size: 23px;
 	margin-right: 4vw;
 	float: right;
 	font-weight: 700;
@@ -504,7 +506,7 @@ margin-right: 0;
     padding: 45px;
     background: #0000004d;
     color: #fff;
-    font-size: 60px;
+    font-size: 36px;
     z-index: 20;
     cursor: default;
 }
@@ -517,7 +519,7 @@ margin-right: 0;
     padding: 45px;
     background: transparent;
     color: #000;
-    font-size: 60px;
+    font-size: 36px;
     z-index: 20;
     cursor: default;
 }
@@ -530,12 +532,12 @@ margin-right: 0;
     padding: 45px;
     background: #ffffffc7;
     color: #1136d8;
-    font-size: 60px;
+    font-size: 36px;
     z-index: 20;
     cursor: default;
 }
 .career h1, .privacy h1 {
-	font-size: 44px;
+	font-size: 36px;
 	margin-bottom: 0px;
 }
 .wideblock {
@@ -543,7 +545,7 @@ margin-right: 0;
 	width: 100%;
 	display: flex;
 	background: var(--main-color);
-	height: calc(60vh - 56px);
+	height: calc(38vh - 56px);
 }
 .about .wideblock {
 	display: block;
@@ -554,19 +556,18 @@ margin-right: 0;
 	background: url(../images/building.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 900px;
+	height: calc(100vh - 112px);
 }
 .wideblock p {
-	font-size: 23px;
+	font-size: 18px;
 	display: block;
 	width: 60%;
 	margin: auto;
 	color: #fff;
-	font-weight: 600;
 	display: block;
 }
 .about .wideblock p {
-	max-width: 600px;
+	max-width: 500px;
 	font-weight: 400;
 }
 .about .wideblock span {
@@ -574,18 +575,16 @@ margin-right: 0;
 	font-size: 23px;
 	font-weight: 700;
 	color: #fff;
-	font-family: 'Raleway', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .about .white-squire-box {
 	padding: 40px 0px; 
 }
 .about .white-squire-box h3 {
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
+	font-weight: 600;
 	color: #1136d8;
-	max-width: 900px;
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -601,13 +600,11 @@ margin-right: 0;
 }
 .iconbox-about img {
 	width: 90px;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 .iconbox-about p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 23px;
-	font-weight: 600;
-	max-width: 450px;
+	font-size: 18px;
+	max-width: 350px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
@@ -620,21 +617,19 @@ margin-right: 0;
 }
 
 .icon-row-2 {
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 .icon-row, .icon-row-2 {
 	display: flex;
 flex-direction: row;}
 .hero-text {
 	margin-top: 60px;
-	font-size: 40px;
-    font-family: 'Maven Pro', sans-serif;
+	font-size: 23px;
     display: block;
     width: 43vw;
     max-width: 730px;
 }
 .nums {
-	font-family: 'Maven Pro', sans-serif;
 	font-weight: 600;
 }
 .logo {
@@ -679,31 +674,29 @@ flex-direction: row;}
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 18px;
-	font-weight: 700;
 	margin-top: 56px;
 }
-.about .icon-box span {font-size: 23px;}
+.about .icon-box span {font-size: 18px;}
 .icon-box span.blue-numbers {
 	margin:0;
 	font-weight: 900;
-	font-size: 80px;
-	font-family: 'Maven Pro', sans-serif;
+	font-size: 60px;
 	color: #1136d8;
 }
 .interested {
 text-align: center;
     display: block;
     color: #fff;
-    font-size: 40px;
+    font-size: 18px;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
 }
 footer {
 	position: relative;
 	color: #fff;
 	overflow: hidden;
-	font-size: 20px;
+	font-size: 18px;
 	background: var(--main-color);
 	height: 422px;
 	z-index: 0;
@@ -717,10 +710,9 @@ footer .logo {
 	margin-bottom: 45px;
 }
 .footer-left-block {
-	font-family: 'Maven Pro', sans-serif;
 	float: left;
 	text-align: left;
-	font-size: 20px;
+	font-size: 18px;
 
 }
 .footer-left-block span {
@@ -729,8 +721,8 @@ footer .logo {
 	margin-bottom: 20px;
 }
 .footer-left-block > span:nth-child(2) {
-	font-size: 30px;
-	font-weight: 700;
+	font-size: 23px;
+	font-weight: 600;
 }
 .footer-right-block {
 
@@ -743,7 +735,7 @@ footer .logo {
 	margin-bottom: 40px;
 }
 .footer-right-block span:first-child {
-	font-size: 25px;
+	font-size: 23px;
 }
 .footer-right-block span:nth-child(3) {
 	margin-bottom: 10px;
@@ -972,7 +964,7 @@ display: flex;
 
 }
 .white-squires h4 {
-	height: 72px;
+	height: 60px;
 	font-weight: 700px;
 }
 .white-squires p {
@@ -984,11 +976,10 @@ display: flex;
 	height: 550px;
 	width: 75%;
 }
-.tech .squires:nth-child(1) {
-    height: 425px;
 
+.tech .squires .button {
+	margin-top: 50px;
 }
-
 }
 /*mobile*/
 
@@ -1050,7 +1041,7 @@ display: inherit !important;
 .main h1 {
 	margin-bottom: 180px;
 }
-h1 {font-size: 27px;
+h1 {font-size: 28px;
 	font-weight: 600;}
 .hero-text {
 	width: 100%;
@@ -1090,19 +1081,18 @@ h1 {font-size: 27px;
 	width: 100%;
 }
 .squires p {
-	font-size: 20px;
+	font-size: 18px;
 	width: 100%;
 	line-height: 1.5;
 }
 .squires.black p {
     font-size: 18px;
     line-height: 1.3;
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
+
     margin-top: 20px;
 }
 .squires h3 {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 23px;
 	width: 100% !important;
 }
@@ -1157,9 +1147,9 @@ h1 {font-size: 27px;
 }
 .interested {
     color: #fff;
-    font-size: 26px;
+    font-size: 18px;
     margin-top: 0px;
-    margin-bottom: -40px;
+
 }
 footer {
 	height: fit-content;
@@ -1249,7 +1239,7 @@ font-size: 15px;
 }
 
 .adress-block span {
-	    font-size: 15px;
+	    font-size: 18px;
     margin-bottom: 10px;
 }
 

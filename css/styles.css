@@ -954,9 +954,7 @@ display: flex;
 .desk-socials img:first-child {
     margin-right: 10px;
 }
-.white-squire-box {
 
-}
 .white-squires h4 {
 	height: 60px;
 	font-weight: 600px;
@@ -967,10 +965,10 @@ display: flex;
 
 }
 .white-squires {
-
+	height: 650px
 }
 .white-squires div {
-	height: 650px;
+	
 	width: 75%;
 }
 

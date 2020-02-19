@@ -183,7 +183,7 @@ ul[class*="menu-hor"] li:hover {
 }
 .white-squires div {
 	width: 60%;
-	height: 500px;
+	height: 650px;
 	margin: 40px auto;
 }
 .white-squires img {
@@ -1062,6 +1062,7 @@ h1 {font-size: 28px;
 }
 
 .white-squires div {
+	height: 650px;
 	width: 100%;
 	height: min-content;
 	margin: 70px auto;

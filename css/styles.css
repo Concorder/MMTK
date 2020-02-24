@@ -159,7 +159,7 @@ ul[class*="menu-hor"] li:hover {
 	box-sizing: border-box;
 	display: table;
 	width: 100%;
-	padding: 70px 20px;
+	padding: 40px 20px;
 }
 .white-squire-box .button {
 	margin-top: 30px;
@@ -428,7 +428,7 @@ iframe {
 }
 .career .hero-banner {
 	position: relative;
-	background: #ffc4c4;
+	display: flex;
 }
 .button {
 	display: block;
@@ -496,7 +496,7 @@ margin-right: 0;
 	margin-top: 20vh;
 	max-width: 770px;
 }
-.career .hero-text-box {
+/*.career .hero-text-box {
 	position: absolute;
     width: 100%;
     max-width: 100%;
@@ -507,20 +507,12 @@ margin-right: 0;
     font-size: 36px;
     z-index: 20;
     cursor: default;
-}
-.about .hero-text-box {
-    position: relative;
-    max-width: 50%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background: transparent;
-    color: #000;
-    font-size: 36px;
-    z-index: 20;
-    cursor: default;
-}
-.policy .hero-text-box {
+}*/
+.career .hero-text-box,
+.tech .hero-text-box,
+.about .hero-text-box,
+.policy .hero-text-box,
+.contact .hero-text-box {
 	position: relative;
     max-width: 100%;
     text-align: center;
@@ -532,6 +524,13 @@ margin-right: 0;
     font-size: 36px;
     z-index: 20;
     cursor: default;
+}
+.tech .hero-text-box h1,
+.about .hero-text-box h1,
+.policy .hero-text-box h1,
+.contact .hero-text-box h1 {
+	max-width: 800px;
+	margin: auto;
 }
 .career h1, .privacy h1 {
 	font-size: 36px;
@@ -577,7 +576,7 @@ margin-right: 0;
 .about .white-squire-box {
 	padding: 40px 0px; 
 }
-.about .white-squire-box h3 {
+.about .white-squire-box h3, .tech .white-squire-box h3  {
 	text-align: center;
 	font-weight: 600;
 	color: #1136d8;
@@ -925,11 +924,11 @@ display: flex;
 }
 
 
-
+.career .hero-banner .hero-text-box,
 .policy .hero-banner .hero-text-box,
 .contact .hero-banner .hero-text-box, 
 .tech .hero-banner .hero-text-box, 
-
+.about .hero-banner .hero-text-box,
 .copyright .hero-banner .hero-text-box,
 .terms .hero-banner .hero-text-box {
 	margin: auto;
@@ -1005,10 +1004,20 @@ display: inherit !important;
 .career .hero-banner {
 	height: 70vh
 }
+.contact .hero-banner {
+	background-position: unset;
+}
+
 .career .hero-text-box {
 	top: 5%;
 }
-.about .hero-text-box {
+
+.contact .hero-text-box,
+.tech .hero-text-box,
+.about .hero-text-box,
+.carreer .hero-text-box,
+.contact .hero-text-box
+ {
 	max-width: unset;
 	background: #ffffffc7;
 	height: 100%;

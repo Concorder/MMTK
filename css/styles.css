@@ -13,7 +13,6 @@ div {
 body {
 	overflow-x: hidden;
 	font-family: 'Roboto', sans-serif;
-;
 }
 p, span, h1, h2, h3, h4{
 	margin:0;
@@ -208,7 +207,6 @@ ul[class*="menu-hor"] li:hover {
 }
 .white-squires:nth-child(even) {
 	float: right;
-
 }
 .interested-2 {
 	text-align: center;
@@ -242,7 +240,6 @@ background-size: cover;}
 	background: var(--main-color);
 }
 .tech .squires img {
-
 	top: 110px;
 	right: 0;
 	bottom: 110px;
@@ -261,7 +258,6 @@ background-size: cover;}
 }
 .tech .squires:nth-child(2) p {
 	font-weight: 400;
-
 }
 
 .tech .squires h3 {width: 80%;}
@@ -1014,6 +1010,12 @@ display: flex;
     z-index: 20;
     display: none;
 }
+#capt-img {
+	width: 150px;
+}
+#capt-input {
+	width: 150px;
+}
 /*==========================================LAPTOP==========*/
 
 @media screen
@@ -1069,7 +1071,12 @@ display: inherit !important;
 .thank-you img {
 
 }
-
+#capt-img {
+	width: 50%;
+}
+#capt-input {
+	width: 40%;
+}
 .thank-you {
 	width: 100%;
 }
